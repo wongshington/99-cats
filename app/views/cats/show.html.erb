@@ -1,0 +1,21 @@
+<img src=<%="https://img.pokemondb.net/artwork/#{@cat.name.downcase}.jpg" %> >
+<h1> <%= @cat.name %> </h1>
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <th>Value</th>
+  </tr>
+
+  <tr>
+    <td> age </td>
+    <td> <%= @cat.age  %> </td>
+  </tr>
+  <% ["birth_date", "color", "name", "sex", "description"].each do |key| %>
+  <tr>
+    <td> <%= key %> </td>
+    <td> <%= @cat[key]  %> </td>
+  </tr>
+  <% end %>
+
+</table>

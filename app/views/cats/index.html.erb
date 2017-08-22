@@ -1,0 +1,12 @@
+<h1>The Most Interesting Cats</h1>
+
+<section>
+  <% @cats.each do |cat| %>
+    <div>
+      <div>
+        <img src=<%="https://img.pokemondb.net/artwork/#{cat.name.downcase}.jpg" %> >
+        <br><a href= <%= cat_url(cat) %> > <%= cat.name %> </a>
+      </div>
+    </div>
+  <% end %>
+</section>
