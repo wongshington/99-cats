@@ -42,3 +42,10 @@ Cat.create(birth_date: '2014/01/20', color: 'Black', name: Faker::Pokemon.name, 
 Cat.create(birth_date: '2014/01/20', color: 'Black', name: Faker::Pokemon.name, sex: 'M', description: Faker::MostInterestingManInTheWorld.quote)
 Cat.create(birth_date: '2014/01/20', color: 'Black', name: Faker::Pokemon.name, sex: 'M', description: Faker::MostInterestingManInTheWorld.quote)
 Cat.create(birth_date: '2014/01/20', color: 'Black', name: Faker::Pokemon.name, sex: 'F', description: Faker::MostInterestingManInTheWorld.quote)
+
+
+CatRentalRequest.create(cat_id: 5, start_date: "01/01/2017", end_date: "03/01/2017", status:  "PENDING")
+CatRentalRequest.create(cat_id: 5, start_date: "02/01/2017", end_date: "04/01/2017", status:  "PENDING")
+CatRentalRequest.create(cat_id: 5, start_date: "05/01/2017", end_date: "08/01/2017", status:  "PENDING")
+CatRentalRequest.create(cat_id: 5, start_date: "04/01/2017", end_date: "06/01/2017", status:  "PENDING")
+CatRentalRequest.create(cat_id: 5, start_date: "02/01/2016", end_date: "03/01/2016", status:  "PENDING")
